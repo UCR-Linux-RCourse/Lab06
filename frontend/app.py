@@ -33,7 +33,7 @@ def index():
             y = ui.number('Y Coordinate')
             z = ui.number('Z Coordinate')
             comment = ui.input('Comment')
-            ui.button('Save Coordinates', on_click=lambda: save_coordinates(x.value, y.value, z.value, comment.value))
+            ui.button('Save Coordinates', on_click=lambda: save_coordinates(x, y, z, comment))
             columns = [
                 {'name': 'x', 'label': 'X Coordinate', 'field': 'x', 'required': True, 'align': 'left'},
                 {'name': 'y', 'label': 'Y Coordinate', 'field': 'y', 'sortable': True},
